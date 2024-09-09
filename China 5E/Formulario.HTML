@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario - Diirectorio telefonico</title>
+<link rel="stylesheet" href="Formulario.CSS">
+</head>
+<body>
+<div class="formulario">
+  <h2>Formulario de directorio telefonico</h2>
+  <form id="formularioTelefonico">
+    <div class="grupo-pregunta">
+      <label for="Nombre">1. Nombre:</label>
+      <input type="text" id="Nombre" name="Nombre" required>
+    </div>
+    <div class="grupo-pregunta">
+      <label for="apellido">2. Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+    </div>
+    <div class="grupo-pregunta">
+      <label for="Telefono">3. Telefono:</label>
+      <input type="number" required>
+    </div>
+    <div class="grupo-pregunta">
+      <label for="Correo">4. Correo:</label>
+      <input type="text" id="Correo" name="Correo" required>
+    </div>
+    <div class="grupo-pregunta">
+      <label for="Alias">5. Alias:</label>
+      <textarea id="Alias" name="Alias" rows="5" required></textarea>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+</body>
+</html>
