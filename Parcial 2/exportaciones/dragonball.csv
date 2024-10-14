@@ -1,0 +1,8 @@
+"id","user_id","name","race","level","strength","speed","endurance","experience","avatar"
+"1","1","LGamer","Saiyan","10","69","71","66","0","Avatar1.png"
+"id","character_id","transformation_id"
+"id","name","date","winner_id"
+"id","tournament_id","character_id"
+"id","name","level_required"
+"id","name","email","password","avatar"
+"1","LGamer","christian.gomez.joya@gmail.com","$2y$10$s7j3fSvC/Cp.2.xCWBvj.uI95eA.eXwlfnLi8XVsKsvMQ5LHMR1D6","Avatar2.png"
