@@ -6,7 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "Avatar4.png", 
         "Avatar5.png", 
         "Avatar6.png",
-        
+        "Avatar7.png",
+        "Avatar8.png",
+        "Avatar9.png",
+        "Avatar10.png",
+        "Avatar11.png",
+        "Avatar12.png",
+        "Avatar13.png"
     ];
 
     // Seleccionar avatar aleatorio

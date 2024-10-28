@@ -1,7 +1,7 @@
-/* Estilos para el formulario de inicio y registro */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    /*background-color: #f4f4f4;*/
+    /*background-color: #f4f4f4;*/ /* Comentado en caso de usar la imagen de fondo */
     background-image: url('backgrounds/Fondo1.png'); /* Ruta de la imagen */
     background-size: cover; /* Ajusta la imagen al tamaño del navegador */
     background-position: center; /* Centra la imagen */
@@ -12,14 +12,85 @@ body {
     align-items: center;
     height: 100vh; /* Asegura que el contenido ocupe todo el alto de la ventana */
     margin: 0; /* Elimina los márgenes del cuerpo */  
+    /* Fondo específico para la segunda página */
+    background-color: #f4f4f4;
 }
 
+/* Estilos del contenedor principal y de las fichas */
+.dashboard-container {
+    width: 80%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.dashboard-main, .create-character-container, .characters-list-container, .character-details-container, .leaderboard-container, .dashboard-container {
+    background-color: rgba(255, 255, 255, 0.418);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 20px 100px rgb(0, 0, 0);
+    width: 1000px;
+    text-align: center;
+}
+
+/* Estilos de las fichas */
+.card {
+    width: 90%;
+    background-color: #ffffff81;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Botón en cada ficha */
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #093b6d;
+    color: rgb(109, 241, 245);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 600px) {
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos para el formulario de inicio y registro */
 .login-container, .register-container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.322);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 300px;
+
 }
 
 h2 {
@@ -44,8 +115,8 @@ input {
 
 button {
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #7700ff;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -64,16 +135,7 @@ button:hover {
 .avatar-preview {
     margin-top: 10px;
     text-align: center;
-}
-
-/* Estilos generales */
-.dashboard-main, .create-character-container, .characters-list-container, .character-details-container, .leaderboard-container, .dashboard-container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    text-align: center;
+    background-attachment: fixed;
 }
 
 .character-details-container img {
@@ -85,20 +147,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-button {
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
 
 form {
