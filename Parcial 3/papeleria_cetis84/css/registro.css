@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('backgrounds/Fondo1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(236, 255, 141, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    height: auto;
+    text-align: center;
+    transform: translateY(-5%);
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 85%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid #333;
+    background: transparent;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: border-bottom 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-bottom: 2px solid #4CAF50;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #333;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.inicio {
+    padding: 12px 25px;
+    background-color: #ffffff;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.inicio:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}

@@ -1,0 +1,59 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1A2A6C, #F37335);
+    color: #fff;
+    background-image: url('backgrounds/Fondo1.png'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 450px;
+    transform: translateY(-5%); /* Posiciona el contenedor ligeramente hacia arriba */
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 12px 0;
+    color: #FFFFFF;
+    background-color: #4CAF50;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #45A049;
+    transform: scale(1.05);
+}
+
+.button-logout {
+    background-color: #E53935;
+}
+
+.button-logout:hover {
+    background-color: #D32F2F;
+    transform: scale(1.05);
+}
